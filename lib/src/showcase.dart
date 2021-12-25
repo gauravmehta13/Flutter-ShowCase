@@ -2,9 +2,9 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-import 'package:flutter_showcase/src/frame/frame_theme.dart';
-import 'package:flutter_showcase/src/templates/templates.dart';
-import 'package:flutter_showcase/src/core/theme.dart';
+import 'package:flutter_showcase_nullsafety/src/core/theme.dart';
+import 'package:flutter_showcase_nullsafety/src/frame/frame_theme.dart';
+import 'package:flutter_showcase_nullsafety/src/templates/templates.dart';
 
 import '../flutter_showcase.dart';
 

@@ -189,7 +189,7 @@ class ProjectGenerator {
     if (!unit.toSource().contains(packageImport)) {
       final Directive node = unit.directives.last;
 
-      final Directive clone = AstCloner().cloneNode(node);
+      final Directive clone = node;
 
       int offset = clone.offset;
       StringToken importToken = StringToken(TokenType.STRING, 'import', offset);

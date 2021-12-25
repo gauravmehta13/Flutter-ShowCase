@@ -1,17 +1,18 @@
+import 'dart:convert';
 import 'dart:io';
 
-import 'package:analyzer/src/dart/ast/utilities.dart';
+import 'package:_fe_analyzer_shared/src/scanner/token.dart';
 import 'package:analyzer/dart/analysis/features.dart';
-import 'package:analyzer/dart/ast/standard_ast_factory.dart';
 import 'package:analyzer/dart/analysis/utilities.dart';
 import 'package:analyzer/dart/ast/ast.dart';
+import 'package:analyzer/dart/ast/standard_ast_factory.dart';
 import 'package:analyzer/dart/ast/token.dart';
 import 'package:analyzer/dart/ast/visitor.dart';
-import 'package:_fe_analyzer_shared/src/scanner/token.dart';
-import 'package:dart_style/dart_style.dart';
-import 'common/common.dart';
+import 'package:analyzer/src/dart/ast/utilities.dart';
 import 'package:args/args.dart';
-import 'dart:convert';
+import 'package:dart_style/dart_style.dart';
+
+import 'common/common.dart';
 
 void main(List<String> args) {
   final parser = ArgParser();

@@ -1,6 +1,6 @@
-name: flutter_showcase
+name: flutter_showcase_nullsafety
 description: A simple, fast and easy way to share you flutter project or mockups with the world.
-version: 0.0.0
+version: 1.0.0
 homepage: https://github.com/jamesblasco/flutter_showcase
 
 environment:
@@ -9,18 +9,18 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  url_launcher: 
-  font_awesome_flutter: 
-  layout: 1.0.0-dev.1
-  equatable: 
-  dart_style: 
-  analyzer: 
-  _fe_analyzer_shared: 
-  args: 
-  yaml: 
+  url_launcher: ^6.0.17 
+  font_awesome_flutter: ^9.2.0 
+  layout: ^1.0.2
+  equatable: ^2.0.3 
+  dart_style: ^2.2.1 
+  analyzer: ^2.8.0 
+  _fe_analyzer_shared: ^31.0.0 
+  args: ^2.3.0 
+  yaml: ^3.1.0 
 
 dev_dependencies:
-  test: any
+  test: ^1.17.12
   flutter_test:
     sdk: flutter
   
@@ -28,11 +28,6 @@ dev_dependencies:
     sdk: flutter
 
 
-
-# For information on the generic Dart part of this file, see the
-# following page: https://dart.dev/tools/pub/pubspec
-
-# The following section is specific to Flutter.
 flutter:
 
   assets:

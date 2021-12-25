@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_showcase/flutter_showcase.dart';
-import 'package:flutter_showcase/src/frame/frame_theme.dart';
+import 'package:flutter_showcase_nullsafety/flutter_showcase.dart';
+import 'package:flutter_showcase_nullsafety/src/frame/frame_theme.dart';
 
 /// An immutable theme for showcase projects
 ///

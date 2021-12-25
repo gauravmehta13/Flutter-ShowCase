@@ -82,7 +82,7 @@ class _GskinnerApp {
           icon: Opacity(
             opacity: 0.8,
             child: Padding(
-                padding: EdgeInsets.only(top: 20),
+                padding: const EdgeInsets.only(top: 20),
                 child: Image.asset(
                   theme?.brightness == Brightness.dark
                       ? 'assets/logo-gskinner-white.png'
@@ -107,32 +107,32 @@ Draw curved vector paths and use them to mask content. Utilizes a small physics 
     theme: TemplateThemeData(
         brightness: Brightness.dark,
         buttonTheme: ButtonThemeData(
-          buttonColor: Color(0xFF4259B2),
+          buttonColor: const Color(0xFF4259B2),
           shape:
               RoundedRectangleBorder(borderRadius: BorderRadius.circular(50)),
           textTheme: ButtonTextTheme.accent,
-          padding: EdgeInsets.all(16),
+          padding: const EdgeInsets.all(16),
         ),
         flutterLogoColor: FlutterLogoColor.white,
-        descriptionTextStyle: TextStyle(
+        descriptionTextStyle: const TextStyle(
             color: Colors.white70,
             fontWeight: FontWeight.w300,
             fontFamily: 'OpenSans',
             package: 'gooey_edge'),
-        titleTextStyle: TextStyle(
+        titleTextStyle: const TextStyle(
             color: Colors.white,
             fontFamily: 'DMSerifDisplay',
             package: 'gooey_edge'),
-        backgroundColor: Color(0xFFE95B43),
+        backgroundColor: const Color(0xFFE95B43),
         frameTheme: FrameThemeData(statusBarBrightness: Brightness.dark),
-        buttonTextStyle: TextStyle(
+        buttonTextStyle: const TextStyle(
             fontSize: 16,
             letterSpacing: .8,
             fontFamily: 'OpenSans',
             fontWeight: FontWeight.w600,
             color: Colors.white,
             package: 'gooey_edge'),
-        buttonIconTheme: IconThemeData(color: Colors.white)),
+        buttonIconTheme: const IconThemeData(color: Colors.white)),
   );
 
   static _GskinnerApp ticketFold = _GskinnerApp(
@@ -149,32 +149,32 @@ Uses the Transform widget to create a folding card effect. In this case a boardi
     theme: TemplateThemeData(
         brightness: Brightness.light,
         buttonTheme: ButtonThemeData(
-          buttonColor: Color(0xFF083e64),
+          buttonColor: const Color(0xFF083e64),
           shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(4)),
           textTheme: ButtonTextTheme.accent,
-          padding: EdgeInsets.all(16),
+          padding: const EdgeInsets.all(16),
         ),
         flutterLogoColor: FlutterLogoColor.original,
-        descriptionTextStyle: TextStyle(
+        descriptionTextStyle: const TextStyle(
             color: Color(0xFF083e64),
             fontWeight: FontWeight.w300,
             fontFamily: 'OpenSans',
             package: 'gooey_edge'),
-        titleTextStyle: TextStyle(
+        titleTextStyle: const TextStyle(
             color: Color(0xFF212121),
             fontFamily: 'OpenSans',
             fontSize: 50,
             fontWeight: FontWeight.w700,
             package: 'ticket_fold'),
-        backgroundColor: Color(0xFFf0f0f0),
-        buttonTextStyle: TextStyle(
+        backgroundColor: const Color(0xFFf0f0f0),
+        buttonTextStyle: const TextStyle(
             fontSize: 16,
             letterSpacing: .8,
             fontFamily: 'OpenSans',
             fontWeight: FontWeight.w600,
             color: Colors.white,
             package: 'ticket_fold'),
-        buttonIconTheme: IconThemeData(color: Colors.white)),
+        buttonIconTheme: const IconThemeData(color: Colors.white)),
   );
 
   static _GskinnerApp parallaxTravelCardsList = _GskinnerApp(
@@ -193,29 +193,29 @@ Use a Stack widget to create a parallax effect inside of a list, while also usin
         buttonTheme: ButtonThemeData(
           buttonColor: Colors.white,
           shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(4)),
-          padding: EdgeInsets.all(16),
+          padding: const EdgeInsets.all(16),
         ),
         flutterLogoColor: FlutterLogoColor.black,
-        descriptionTextStyle: TextStyle(
+        descriptionTextStyle: const TextStyle(
             color: Color(0xFF666666),
             height: 1.5,
             fontWeight: FontWeight.w300,
             fontFamily: 'OpenSans',
             package: 'parallax_travel_cards_list'),
-        titleTextStyle: TextStyle(
+        titleTextStyle: const TextStyle(
             color: Color(0xFF1a1a1a),
             height: 1,
             fontFamily: 'DMSerifDisplay',
             package: 'parallax_travel_cards_list'),
-        backgroundColor: Color(0xffdaf3f7),
-        buttonTextStyle: TextStyle(
+        backgroundColor: const Color(0xffdaf3f7),
+        buttonTextStyle: const TextStyle(
             fontSize: 16,
             letterSpacing: .8,
             fontFamily: 'OpenSans',
             fontWeight: FontWeight.w600,
             color: Color(0xFF1a1a1a),
             package: 'ticket_fold'),
-        buttonIconTheme: IconThemeData(color: Color(0xFF1a1a1a))),
+        buttonIconTheme: const IconThemeData(color: Color(0xFF1a1a1a))),
   );
 
   static _GskinnerApp productDetailZoom = _GskinnerApp(
@@ -236,16 +236,16 @@ Example of an animated png sequence within a Hero animation; also uses a Canvas 
           shape:
               RoundedRectangleBorder(borderRadius: BorderRadius.circular(50)),
           textTheme: ButtonTextTheme.accent,
-          padding: EdgeInsets.all(16),
+          padding: const EdgeInsets.all(16),
         ),
         flutterLogoColor: FlutterLogoColor.white,
-        descriptionTextStyle: TextStyle(
+        descriptionTextStyle: const TextStyle(
             fontFamily: 'WorkSans',
             color: Colors.white70,
             fontWeight: FontWeight.w400,
             letterSpacing: 2,
             package: 'product_detail_zoom'),
-        titleTextStyle: TextStyle(
+        titleTextStyle: const TextStyle(
             fontFamily: 'WorkSans',
             fontWeight: FontWeight.bold,
             package: 'product_detail_zoom',
@@ -257,13 +257,13 @@ Example of an animated png sequence within a Hero animation; also uses a Canvas 
           statusBarBrightness: Brightness.dark,
         ),
         backgroundColor: Colors.black,
-        buttonTextStyle: TextStyle(
+        buttonTextStyle: const TextStyle(
             fontFamily: 'WorkSans',
             color: Colors.black,
             fontWeight: FontWeight.bold,
             letterSpacing: 2,
             package: 'product_detail_zoom'),
-        buttonIconTheme: IconThemeData(color: Colors.black)),
+        buttonIconTheme: const IconThemeData(color: Colors.black)),
   );
 
   // Doesn't work well with Flutter Web yet
@@ -322,7 +322,7 @@ Use a Flare animation to create a custom Slider control. Creates a custom FlareC
           'https://github.com/gskinnerTeam/flutter_vignettes/tree/master/vignettes/dog_slider',
       theme: TemplateThemeData(
         brightness: Brightness.light,
-        titleTextStyle: TextStyle(
+        titleTextStyle: const TextStyle(
             fontSize: 60.0,
             fontFamily: "Quicksand",
             package: 'dog_slider',
@@ -331,18 +331,18 @@ Use a Flare animation to create a custom Slider control. Creates a custom FlareC
             textBaseline: TextBaseline.alphabetic,
             height: 1.2),
         flutterLogoColor: FlutterLogoColor.original,
-        descriptionTextStyle: TextStyle(
+        descriptionTextStyle: const TextStyle(
           color: Colors.black,
           fontFamily: "Quicksand",
           package: 'dog_slider',
         ),
-        buttonTextStyle: TextStyle(color: Colors.white),
-        buttonIconTheme: IconThemeData(color: Colors.white),
+        buttonTextStyle: const TextStyle(color: Colors.white),
+        buttonIconTheme: const IconThemeData(color: Colors.white),
         buttonTheme: ButtonThemeData(
-          buttonColor: Color(0xff2cb5b5),
-          padding: EdgeInsets.symmetric(horizontal: 32, vertical: 16),
+          buttonColor: const Color(0xff2cb5b5),
+          padding: const EdgeInsets.symmetric(horizontal: 32, vertical: 16),
           textTheme: ButtonTextTheme.primary,
-          hoverColor: Color(0xff2cb5b5),
+          hoverColor: const Color(0xff2cb5b5),
           shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
         ),
       ));
